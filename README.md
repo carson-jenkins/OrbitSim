@@ -1,13 +1,13 @@
 # OrbitSim
 
-OrbitSim is a Python-based application that models and visualizes satellite motion in space. It calculates trajectories using gravitational interactions and allows users to simulate additional orbital disturbances for a more dynamic representation.
+OrbitSim is a Python-based application that models and visualizes satellite motion in a 2D plane. It calculates orbital trajectories using Newtonian gravity and numerically integrates the equations of motion with the Runge-Kutta 4th order method.
 
 ## Features
 
-- 2D Orbit Simulation: Models satellite motion around Earth
-- Visual Trajectory Representation: Generates graphical plots of orbital paths
-- Perturbation Effects: Option to include J2 perturbation (Earth's oblateness)
-- Accurate Numerical Integration: Uses the Runge-Kutta 4th order method for precision.
+- 2D Orbital Simulation: Models the motion of a satellite around Earth assuming a circular starting orbit
+- Visual Trajectory Representation: Generates a graphical plot of the satellite’s orbital path
+- Accurate Numerical Integration: Uses the Runge-Kutta 4th order method to compute position and velocity updates
+- Customizable Parameters: Modify initial conditions, simulation time, and time step for different scenarios
 
 ## Installation
 
@@ -25,3 +25,7 @@ Run the simulation by executing the following command:
 ```
 python main.py
 ```
+
+## Notes
+
+The default setup models a satellite in low Earth orbit with an initial circular trajectory.
